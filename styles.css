@@ -67,7 +67,16 @@ h1, h2, h3, h4 {
   text-wrap: balance;
 }
 
-p { margin: 0; }
+p { margin: 0; text-wrap: pretty; }
+
+/* Short statement blocks: balance lines so nothing dangles on its own */
+.contrast-card p,
+.why-card p,
+.problem-close,
+.problem-lead,
+.problem-item p,
+.legend-desc,
+.stat .lab { text-wrap: balance; }
 
 a { color: inherit; text-decoration: none; }
 
