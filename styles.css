@@ -558,7 +558,7 @@ section { padding-block: var(--section-y); }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 14px;
-  margin-top: 0;
+  margin-top: 20px;
 }
 .contrast-card {
   border-radius: var(--r-card);
