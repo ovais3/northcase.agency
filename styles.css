@@ -435,13 +435,13 @@ section { padding-block: var(--section-y); }
 .trustbar { padding-block: 64px; background: var(--surface); }
 .trustbar .kicker {
   text-align: center;
-  font-family: var(--font-mono);
+  font-family: var(--font-body);
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 0.66rem;
-  letter-spacing: 0.11em;
-  color: var(--label);
-  margin-bottom: 28px;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: var(--slate);
+  margin-bottom: 34px;
 }
 .logo-wall {
   display: flex;
@@ -641,7 +641,19 @@ section { padding-block: var(--section-y); }
   transition: transform 0.2s var(--ease);
 }
 .tool-logo:hover { transform: translateY(-3px); }
-.tl-chip { width: 40px; height: 40px; border-radius: 11px; flex: 0 0 auto; }
+.tl-chip {
+  width: 40px;
+  height: 40px;
+  border-radius: 11px;
+  flex: 0 0 auto;
+  background: #fff;
+  border: 1px solid var(--hair);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.tl-chip img { width: 26px; height: 26px; object-fit: contain; }
 .tl-name {
   font-family: var(--font-display);
   font-weight: 700;
@@ -920,7 +932,7 @@ section { padding-block: var(--section-y); }
   border-top: 1px solid var(--hair);
 }
 .footer-bottom p { font-size: 0.86rem; color: var(--label); }
-.footer-bottom .mono { color: var(--label); }
+.footer-tagline { color: var(--slate); font-weight: 600; }
 
 /* ============================================================
    SCROLL REVEAL
