@@ -127,10 +127,12 @@
                 <text class="cf-label" x="-2" y="235" fill="var(--steel)" style="animation-delay:.26s">W</text>
               </g>
 
-              <!-- Flow paths -->
-              <g fill="none" stroke="var(--accent-mid)" stroke-width="1.3" stroke-dasharray="3 6" opacity="0.5" stroke-linecap="round">
-                <path class="cf-flow" d="M356 68 Q300 120 282 168 Q262 210 234 226" style="animation-delay:.4s"/>
-                <path class="cf-flow" d="M118 404 Q190 360 198 300 Q204 256 228 234" style="animation-delay:.46s"/>
+              <!-- Flow paths (funnel routes that prospects travel) -->
+              <g fill="none" stroke="var(--accent-mid)" stroke-width="1.2" stroke-dasharray="3 6" opacity="0.4" stroke-linecap="round">
+                <path class="cf-flow" d="M356 68 Q300 120 282 168 Q262 210 230 230" style="animation-delay:.4s"/>
+                <path class="cf-flow" d="M118 404 Q190 360 198 300 Q210 256 230 230" style="animation-delay:.46s"/>
+                <path class="cf-flow" d="M44 317 Q120 300 165 272 Q205 250 230 230" style="animation-delay:.52s"/>
+                <path class="cf-flow" d="M432 266 Q350 258 300 250 Q260 240 230 230" style="animation-delay:.58s"/>
               </g>
 
               <!-- Dots: outer ring (cold market) -->
@@ -157,6 +159,52 @@
               <!-- Dots: ring 4 (converting) -->
               <g class="cf-dot" fill="var(--accent)" style="animation-delay:.56s">
                 <circle cx="240" cy="175" r="4.4"/><circle cx="220" cy="285" r="4.4"/>
+              </g>
+
+              <!-- Live funnel: prospects flowing inward toward "Clients" -->
+              <g class="cf-travelers">
+                <circle class="cf-traveler" r="3" fill="#b0a496">
+                  <animateMotion dur="4.4s" begin="0s" repeatCount="indefinite" path="M356 68 Q300 120 282 168 Q262 210 230 230"/>
+                  <animate attributeName="opacity" dur="4.4s" begin="0s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.05;0.18;0.82;1"/>
+                  <animate attributeName="r" dur="4.4s" begin="0s" repeatCount="indefinite" values="2.4;3;3.6;4.4" keyTimes="0;0.5;0.85;1"/>
+                  <animate attributeName="fill" dur="4.4s" begin="0s" repeatCount="indefinite" values="#b0a496;#f0935f;#e85d04" keyTimes="0;0.55;1"/>
+                </circle>
+                <circle class="cf-traveler" r="3" fill="#b0a496">
+                  <animateMotion dur="4.4s" begin="0.63s" repeatCount="indefinite" path="M44 317 Q120 300 165 272 Q205 250 230 230"/>
+                  <animate attributeName="opacity" dur="4.4s" begin="0.63s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.05;0.18;0.82;1"/>
+                  <animate attributeName="r" dur="4.4s" begin="0.63s" repeatCount="indefinite" values="2.4;3;3.6;4.4" keyTimes="0;0.5;0.85;1"/>
+                  <animate attributeName="fill" dur="4.4s" begin="0.63s" repeatCount="indefinite" values="#b0a496;#f0935f;#e85d04" keyTimes="0;0.55;1"/>
+                </circle>
+                <circle class="cf-traveler" r="3" fill="#b0a496">
+                  <animateMotion dur="4.4s" begin="1.26s" repeatCount="indefinite" path="M118 404 Q190 360 198 300 Q210 256 230 230"/>
+                  <animate attributeName="opacity" dur="4.4s" begin="1.26s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.05;0.18;0.82;1"/>
+                  <animate attributeName="r" dur="4.4s" begin="1.26s" repeatCount="indefinite" values="2.4;3;3.6;4.4" keyTimes="0;0.5;0.85;1"/>
+                  <animate attributeName="fill" dur="4.4s" begin="1.26s" repeatCount="indefinite" values="#b0a496;#f0935f;#e85d04" keyTimes="0;0.55;1"/>
+                </circle>
+                <circle class="cf-traveler" r="3" fill="#b0a496">
+                  <animateMotion dur="4.4s" begin="1.89s" repeatCount="indefinite" path="M432 266 Q350 258 300 250 Q260 240 230 230"/>
+                  <animate attributeName="opacity" dur="4.4s" begin="1.89s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.05;0.18;0.82;1"/>
+                  <animate attributeName="r" dur="4.4s" begin="1.89s" repeatCount="indefinite" values="2.4;3;3.6;4.4" keyTimes="0;0.5;0.85;1"/>
+                  <animate attributeName="fill" dur="4.4s" begin="1.89s" repeatCount="indefinite" values="#b0a496;#f0935f;#e85d04" keyTimes="0;0.55;1"/>
+                </circle>
+                <circle class="cf-traveler" r="3" fill="#b0a496">
+                  <animateMotion dur="4.4s" begin="2.52s" repeatCount="indefinite" path="M356 68 Q300 120 282 168 Q262 210 230 230"/>
+                  <animate attributeName="opacity" dur="4.4s" begin="2.52s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.05;0.18;0.82;1"/>
+                  <animate attributeName="r" dur="4.4s" begin="2.52s" repeatCount="indefinite" values="2.4;3;3.6;4.4" keyTimes="0;0.5;0.85;1"/>
+                  <animate attributeName="fill" dur="4.4s" begin="2.52s" repeatCount="indefinite" values="#b0a496;#f0935f;#e85d04" keyTimes="0;0.55;1"/>
+                </circle>
+                <circle class="cf-traveler" r="3" fill="#b0a496">
+                  <animateMotion dur="4.4s" begin="3.15s" repeatCount="indefinite" path="M118 404 Q190 360 198 300 Q210 256 230 230"/>
+                  <animate attributeName="opacity" dur="4.4s" begin="3.15s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.05;0.18;0.82;1"/>
+                  <animate attributeName="r" dur="4.4s" begin="3.15s" repeatCount="indefinite" values="2.4;3;3.6;4.4" keyTimes="0;0.5;0.85;1"/>
+                  <animate attributeName="fill" dur="4.4s" begin="3.15s" repeatCount="indefinite" values="#b0a496;#f0935f;#e85d04" keyTimes="0;0.55;1"/>
+                </circle>
+                <circle class="cf-traveler" r="3" fill="#b0a496">
+                  <animateMotion dur="4.4s" begin="3.78s" repeatCount="indefinite" path="M44 317 Q120 300 165 272 Q205 250 230 230"/>
+                  <animate attributeName="opacity" dur="4.4s" begin="3.78s" repeatCount="indefinite" values="0;0;1;1;0" keyTimes="0;0.05;0.18;0.82;1"/>
+                  <animate attributeName="r" dur="4.4s" begin="3.78s" repeatCount="indefinite" values="2.4;3;3.6;4.4" keyTimes="0;0.5;0.85;1"/>
+                  <animate attributeName="fill" dur="4.4s" begin="3.78s" repeatCount="indefinite" values="#b0a496;#f0935f;#e85d04" keyTimes="0;0.55;1"/>
+                </circle>
               </g>
 
               <!-- Center: bullseye + pulse + compass rose -->
@@ -261,7 +309,6 @@
     <section class="problem" aria-labelledby="prob-h">
       <div class="wrap problem-grid">
         <div class="reveal">
-          <span class="eyebrow">The problem</span>
           <h2 class="h2" id="prob-h">Getting clients should not feel this random</h2>
           <p class="problem-lead"><strong>You are good at what you do. So why does new business still feel like guesswork?</strong></p>
           <p class="problem-lead">For most founders, it comes down to a few things:</p>
@@ -293,7 +340,6 @@
     <section class="engines" id="how" aria-labelledby="how-h">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="eyebrow">How it works</span>
           <h2 class="h2" id="how-h">How Northcast brings you clients</h2>
           <p class="engines-intro">The best clients ignore cold pitches, so we do not send them. We find your highest-intent buyers, reach each one with a message built just for them, and turn those conversations into pipeline. Most founders start with the first two engines below.</p>
         </div>
@@ -346,7 +392,6 @@
     <section class="band" aria-labelledby="band-h">
       <div class="wrap band-grid">
         <div class="reveal">
-          <span class="eyebrow">The difference</span>
           <h2 class="h2" id="band-h">Personal at scale. <span class="accent">Never generic.</span></h2>
         </div>
         <div class="reveal d1">
@@ -365,11 +410,74 @@
       </div>
     </section>
 
+    <!-- ============================ TOOLS ============================ -->
+    <section class="tools" aria-labelledby="tools-h">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2 class="h2" id="tools-h">The stack we run for you</h2>
+          <p>We operate a best-in-class GTM and content stack in the background, so you get the output without the overhead, the seats, or the learning curve.</p>
+        </div>
+
+        <div class="tool-groups">
+          <div class="tool-group reveal">
+            <div class="tool-group-label">Outbound &amp; enrichment</div>
+            <div class="tool-pills">
+              <span class="tool-pill">Clay</span>
+              <span class="tool-pill">Smartlead</span>
+              <span class="tool-pill">Instantly</span>
+              <span class="tool-pill">Apollo</span>
+              <span class="tool-pill">HeyReach</span>
+              <span class="tool-pill">Trigify</span>
+              <span class="tool-pill">Clearbit</span>
+              <span class="tool-pill">Sales Navigator</span>
+              <span class="tool-pill">Findymail</span>
+            </div>
+          </div>
+
+          <div class="tool-group reveal">
+            <div class="tool-group-label">AI &amp; research</div>
+            <div class="tool-pills">
+              <span class="tool-pill">Claude</span>
+              <span class="tool-pill">GPT-4</span>
+              <span class="tool-pill">Perplexity</span>
+              <span class="tool-pill">Ocean.io</span>
+              <span class="tool-pill">Apify</span>
+            </div>
+          </div>
+
+          <div class="tool-group reveal">
+            <div class="tool-group-label">Podcast &amp; content</div>
+            <div class="tool-pills">
+              <span class="tool-pill">Riverside</span>
+              <span class="tool-pill">Descript</span>
+              <span class="tool-pill">Castmagic</span>
+              <span class="tool-pill">Opus Clip</span>
+              <span class="tool-pill">Captivate</span>
+              <span class="tool-pill">PodMatch</span>
+            </div>
+          </div>
+
+          <div class="tool-group reveal">
+            <div class="tool-group-label">Offers &amp; sales</div>
+            <div class="tool-pills">
+              <span class="tool-pill">Calendly</span>
+              <span class="tool-pill">HubSpot</span>
+              <span class="tool-pill">Close</span>
+              <span class="tool-pill">Stripe</span>
+              <span class="tool-pill">Kajabi</span>
+              <span class="tool-pill">Skool</span>
+              <span class="tool-pill">Loom</span>
+              <span class="tool-pill">Notion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============================ TIMELINE ============================ -->
     <section class="after" aria-labelledby="after-h">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="eyebrow">The first 90 days</span>
           <h2 class="h2" id="after-h">What happens after you say yes</h2>
         </div>
 
@@ -419,7 +527,6 @@
     <section class="why" aria-labelledby="why-h">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="eyebrow">Why Northcast</span>
           <h2 class="h2" id="why-h">Why founders choose Northcast</h2>
         </div>
         <div class="why-grid">
@@ -479,10 +586,15 @@
         <div class="results-card reveal">
           <span class="glow" aria-hidden="true"></span>
           <div>
-            <span class="eyebrow">Real results</span>
             <h2 class="h2" id="res-h">Pipeline you can point to</h2>
             <p class="lede">GHA Marketing needed more pipeline, for themselves and their clients. Using the same signal-based outreach and guest booking we build for every founder, we generated $24K in new revenue and booked 20+ qualified guests across 11 of their clients, in two months.</p>
-            <div class="results-logo">GHA Marketing</div>
+            <div class="results-logo">
+              <svg class="results-logo-chip" viewBox="0 0 32 32" aria-hidden="true">
+                <path d="M5 4h22a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H12.5L6.5 26l1.6-5H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3z" fill="#FFC400"/>
+                <text x="16" y="16.5" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="9.5" letter-spacing="-0.2" fill="#0A0A0A">GHA</text>
+              </svg>
+              GHA Marketing
+            </div>
           </div>
           <div class="stats">
             <div class="stat">
@@ -502,7 +614,6 @@
     <section class="faq" id="faq" aria-labelledby="faq-h">
       <div class="wrap faq-wrap">
         <div class="section-head reveal" style="text-align:center; margin-left:auto; margin-right:auto;">
-          <span class="eyebrow">FAQ</span>
           <h2 class="h2" id="faq-h">Questions you might have</h2>
         </div>
 
@@ -583,7 +694,6 @@
             <path d="M150 230 L230 242 L310 230 L230 218 Z" fill="var(--ink)"/>
           </svg>
           <div class="final-inner">
-            <span class="eyebrow">Book a call</span>
             <h2 class="h2" id="final-h">Your next clients are one conversation away</h2>
             <p>Book a free 30-minute call. We will look at your offer, show you what your pipeline could look like, and tell you honestly if we can help. No pressure.</p>
             <div class="calendly-embed">

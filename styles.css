@@ -386,7 +386,7 @@ section { padding-block: var(--section-y); }
   color: var(--ink);
   line-height: 1.3;
 }
-.legend-desc { font-size: 0.82rem; color: var(--slate); line-height: 1.4; }
+.legend-desc { display: block; text-wrap: balance; font-size: 0.82rem; color: var(--slate); line-height: 1.4; }
 
 /* Compass animation - staggered fade in, center pulse */
 .cf-ring, .cf-dot, .cf-tick, .cf-flow, .cf-rose, .cf-label {
@@ -618,6 +618,48 @@ section { padding-block: var(--section-y); }
 .contrast-card.good p { color: var(--ink); }
 
 /* ============================================================
+   TOOLS
+   ============================================================ */
+.tool-groups { display: flex; flex-direction: column; }
+.tool-group {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 28px;
+  align-items: start;
+  padding: 26px 0;
+  border-top: 1px solid var(--hair);
+}
+.tool-group:last-child { border-bottom: 1px solid var(--hair); }
+.tool-group-label {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.02rem;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  padding-top: 6px;
+}
+.tool-pills { display: flex; flex-wrap: wrap; gap: 10px; }
+.tool-pill {
+  display: inline-flex;
+  align-items: center;
+  background: var(--surface);
+  border: 1px solid var(--hair);
+  border-radius: 999px;
+  padding: 9px 17px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--ink);
+  transition: border-color 0.2s var(--ease), color 0.2s var(--ease), transform 0.2s var(--ease);
+  cursor: default;
+}
+.tool-pill:hover {
+  border-color: var(--accent);
+  color: var(--accent-d);
+  transform: translateY(-2px);
+}
+
+/* ============================================================
    TIMELINE
    ============================================================ */
 .timeline { position: relative; margin-top: 56px; }
@@ -729,12 +771,11 @@ section { padding-block: var(--section-y); }
   align-items: center;
   gap: 10px;
 }
-.results-logo::before {
-  content: "";
-  width: 22px; height: 22px;
-  border-radius: 6px;
-  background: var(--accent);
-  display: inline-block;
+.results-logo-chip {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 auto;
+  border-radius: 7px;
 }
 .stats { display: flex; flex-direction: column; gap: 22px; }
 .stat {
@@ -976,6 +1017,7 @@ section { padding-block: var(--section-y); }
   }
   .nav-menu .btn { margin-top: 14px; }
   .problem-list { grid-template-columns: 1fr; }
+  .tool-group { grid-template-columns: 1fr; gap: 14px; }
   .problem-list .problem-item:nth-child(even) { padding-left: 0; border-left: none; }
   .problem-list .problem-item:nth-child(odd) { padding-right: 0; }
   .contrast { grid-template-columns: 1fr; }
@@ -1003,4 +1045,5 @@ section { padding-block: var(--section-y); }
   .reveal, .legend-item { opacity: 1 !important; transform: none !important; }
   .cf-ring, .cf-dot, .cf-tick, .cf-flow, .cf-rose, .cf-label { opacity: 1 !important; }
   .cf-pulse { animation: none !important; opacity: 0.4 !important; }
+  .cf-travelers { display: none; }
 }

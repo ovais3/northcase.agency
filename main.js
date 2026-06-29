@@ -89,6 +89,10 @@
   var compassSvg = document.getElementById("compassSvg");
   var compassStage = document.getElementById("compassStage");
   if (compassSvg && compassStage) {
+    if (reduceMotion && compassSvg.pauseAnimations) {
+      // Freeze the flowing-prospect SMIL animations for reduced-motion users
+      compassSvg.pauseAnimations();
+    }
     if (reduceMotion || !("IntersectionObserver" in window)) {
       compassSvg.classList.add("in");
       compassStage.classList.add("in");
