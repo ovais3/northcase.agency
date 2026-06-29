@@ -23,6 +23,12 @@ A single-page static marketing site. No build step, no dependencies. Just static
 
 There is no framework or build — Vercel serves the files directly.
 
+## Booking
+The Calendly inline widget is embedded directly in the final "Book a call" section
+(`#book`), so visitors book without leaving the page. To change the event, edit the
+`data-url` on the `.calendly-inline-widget` in `index.html` (currently
+`https://calendly.com/northcast/intro-call`). The nav, hero, and timeline "Book a call"
+buttons all scroll to that embedded widget.
+
 ## After deploy
-- Replace the booking link in `index.html` (search for `cal.com/northcast/intro`).
 - Verify the Open Graph preview, then connect a custom domain in Vercel → Settings → Domains.
