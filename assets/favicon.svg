@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#2a211b"/>
+  <circle cx="32" cy="32" r="20" fill="none" stroke="#b0a496" stroke-width="2"/>
+  <!-- vertical needle (accent) -->
+  <path d="M32 12 L37 32 L32 38 L27 32 Z" fill="#e85d04"/>
+  <!-- horizontal needle (ink/light) -->
+  <path d="M52 32 L32 37 L26 32 L32 27 Z" fill="#fdfbf8" opacity="0.92"/>
+  <circle cx="32" cy="32" r="3.4" fill="#fdfbf8"/>
+  <circle cx="32" cy="32" r="1.4" fill="#e85d04"/>
+</svg>

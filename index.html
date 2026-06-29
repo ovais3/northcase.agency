@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Northcast | More of the right clients, without the chasing</title>
+  <meta name="description" content="Northcast builds B2B founders a modern GTM engine using AI, Clay, and real human strategy. Warm podcast pipeline and signal-based outbound that book the right calls, week after week." />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Northcast | More of the right clients, without the chasing" />
+  <meta property="og:description" content="A modern GTM engine for founders. Warm podcast pipeline and signal-based outbound that book the right calls, week after week." />
+  <meta property="og:image" content="assets/og.svg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#fdfbf8" />
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="canonical" href="https://northcast.io/" />
+
+  <!-- Fonts: preconnect + subset weights, swap on load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400..700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Northcast",
+    "description": "A modern GTM engine for founders. Warm podcast pipeline and signal-based outbound.",
+    "url": "https://northcast.io/",
+    "logo": "https://northcast.io/assets/favicon.svg"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" id="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top" aria-label="Northcast home">
+        <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+          <circle cx="32" cy="32" r="22" fill="none" stroke="var(--steel)" stroke-width="2"/>
+          <path d="M32 9 L37.5 32 L32 39 L26.5 32 Z" fill="var(--accent)"/>
+          <path d="M55 32 L32 37.5 L25 32 L32 26.5 Z" fill="var(--ink)" opacity="0.9"/>
+          <circle cx="32" cy="32" r="3.4" fill="var(--bg)"/>
+          <circle cx="32" cy="32" r="1.5" fill="var(--accent)"/>
+        </svg>
+        <span class="word">Northcast</span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a class="navlink" href="#how">How it works</a>
+        <a class="navlink" href="#results">Results</a>
+        <a class="navlink" href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a class="btn btn-primary always" href="#book">Book a call</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav-menu" id="navMenu">
+      <a href="#how">How it works</a>
+      <a href="#results">Results</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-primary" href="#book">Book a call</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <span id="top"></span>
+
+    <!-- ============================ HERO ============================ -->
+    <section class="hero" aria-labelledby="hero-h">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow hero-eyebrow reveal">For founders with a proven offer who still rely on referrals</span>
+          <h1 class="h1 reveal d1" id="hero-h">More of the <span class="accent">right clients.</span> Without the chasing.</h1>
+          <p class="sub reveal d2">You are great at the work, and your clients get results. The only thing missing is a steady flow of the right conversations. Northcast builds you a modern GTM engine, AI, the Clay stack, and real human strategy, that puts the right people in front of you, week after week.</p>
+          <div class="hero-actions reveal d3">
+            <a class="btn btn-primary btn-lg" href="#book">Book a call</a>
+            <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+          </div>
+          <p class="hero-note">A modern GTM engine, built around warm conversations and signal-based outbound.</p>
+        </div>
+
+        <div class="hero-visual">
+          <div class="compass-stage" id="compassStage">
+            <!-- ====== COMPASS-FUNNEL SIGNATURE ====== -->
+            <svg class="compass-svg" id="compassSvg" viewBox="-20 -20 500 500" role="img" aria-labelledby="cf-title cf-desc">
+              <title id="cf-title">The Northcast compass-funnel</title>
+              <desc id="cf-desc">A compass mapping the funnel from your whole market on the outer ring inward to booked clients at the center, with five stages: your market, reached, in conversation, booked calls, and clients.</desc>
+
+              <!-- Rings -->
+              <g fill="none">
+                <circle class="cf-ring" cx="230" cy="230" r="205" stroke="var(--steel)" stroke-width="1.2" opacity="0.55" style="animation-delay:.05s"/>
+                <circle class="cf-ring" cx="230" cy="230" r="152" stroke="var(--hair-2)" stroke-width="1.2" style="animation-delay:.13s"/>
+                <circle class="cf-ring" cx="230" cy="230" r="100" stroke="var(--hair-2)" stroke-width="1.2" style="animation-delay:.21s"/>
+                <circle class="cf-ring" cx="230" cy="230" r="56" stroke="var(--accent-mid)" stroke-width="1.6" style="animation-delay:.29s"/>
+              </g>
+
+              <!-- Cardinal ticks + labels -->
+              <g stroke-linecap="round">
+                <line class="cf-tick" x1="230" y1="13" x2="230" y2="27" stroke="var(--accent)" stroke-width="2" style="animation-delay:.1s"/>
+                <line class="cf-tick" x1="447" y1="230" x2="433" y2="230" stroke="var(--steel)" stroke-width="2" style="animation-delay:.12s"/>
+                <line class="cf-tick" x1="230" y1="447" x2="230" y2="433" stroke="var(--steel)" stroke-width="2" style="animation-delay:.14s"/>
+                <line class="cf-tick" x1="13" y1="230" x2="27" y2="230" stroke="var(--steel)" stroke-width="2" style="animation-delay:.16s"/>
+              </g>
+              <g font-family="var(--font-mono)" font-size="13" font-weight="500" letter-spacing="1" text-anchor="middle">
+                <text class="cf-label" x="230" y="6" fill="var(--accent)" style="animation-delay:.2s">N</text>
+                <text class="cf-label" x="462" y="235" fill="var(--steel)" style="animation-delay:.22s">E</text>
+                <text class="cf-label" x="230" y="470" fill="var(--steel)" style="animation-delay:.24s">S</text>
+                <text class="cf-label" x="-2" y="235" fill="var(--steel)" style="animation-delay:.26s">W</text>
+              </g>
+
+              <!-- Flow paths -->
+              <g fill="none" stroke="var(--accent-mid)" stroke-width="1.3" stroke-dasharray="3 6" opacity="0.5" stroke-linecap="round">
+                <path class="cf-flow" d="M356 68 Q300 120 282 168 Q262 210 234 226" style="animation-delay:.4s"/>
+                <path class="cf-flow" d="M118 404 Q190 360 198 300 Q204 256 228 234" style="animation-delay:.46s"/>
+              </g>
+
+              <!-- Dots: outer ring (cold market) -->
+              <g class="cf-dot" fill="var(--steel)" style="animation-delay:.32s">
+                <circle cx="425" cy="167" r="3.4"/><circle cx="356" cy="68" r="3.4"/>
+                <circle cx="237" cy="25" r="3.4"/><circle cx="115" cy="60" r="3.4"/>
+                <circle cx="37" cy="160" r="3.4"/><circle cx="44" cy="317" r="3.4"/>
+                <circle cx="134" cy="411" r="3.4"/><circle cx="300" cy="423" r="3.4"/>
+                <circle cx="392" cy="356" r="3.4"/><circle cx="432" cy="266" r="3.4"/>
+              </g>
+              <!-- Dots: ring 2 -->
+              <g class="cf-dot" fill="var(--slate)" style="animation-delay:.4s">
+                <circle cx="355" cy="143" r="3.6"/><circle cx="269" cy="83" r="3.6"/>
+                <circle cx="132" cy="114" r="3.6"/><circle cx="79" cy="217" r="3.6"/>
+                <circle cx="114" cy="328" r="3.6"/><circle cx="217" cy="381" r="3.6"/>
+                <circle cx="317" cy="355" r="3.6"/><circle cx="373" cy="282" r="3.6"/>
+              </g>
+              <!-- Dots: ring 3 -->
+              <g class="cf-dot" fill="var(--accent-mid)" style="animation-delay:.48s">
+                <circle cx="294" cy="153" r="4"/><circle cx="180" cy="143" r="4"/>
+                <circle cx="136" cy="264" r="4"/><circle cx="256" cy="327" r="4"/>
+                <circle cx="317" cy="280" r="4"/>
+              </g>
+              <!-- Dots: ring 4 (converting) -->
+              <g class="cf-dot" fill="var(--accent)" style="animation-delay:.56s">
+                <circle cx="240" cy="175" r="4.4"/><circle cx="220" cy="285" r="4.4"/>
+              </g>
+
+              <!-- Center: bullseye + pulse + compass rose -->
+              <g class="cf-rose" style="animation-delay:.6s">
+                <circle cx="230" cy="230" r="46" fill="var(--accent-soft)" opacity="0.55"/>
+                <circle class="cf-pulse" cx="230" cy="230" r="38" fill="none" stroke="var(--accent)" stroke-width="1.4"/>
+                <circle cx="230" cy="230" r="30" fill="none" stroke="var(--accent-mid)" stroke-width="1.3"/>
+                <circle cx="230" cy="230" r="17" fill="none" stroke="var(--hair-2)" stroke-width="1.2"/>
+                <path d="M230 196 L238 230 L230 252 L222 230 Z" fill="var(--accent)"/>
+                <path d="M196 230 L230 238 L264 230 L230 222 Z" fill="var(--ink)"/>
+                <circle cx="230" cy="230" r="4.5" fill="var(--bg)"/>
+                <circle cx="230" cy="230" r="2" fill="var(--accent)"/>
+              </g>
+            </svg>
+
+            <!-- Stage legend (part of the signature) -->
+            <ol class="legend" aria-label="Funnel stages">
+              <li class="legend-item">
+                <span class="legend-num">01</span>
+                <span><span class="legend-name">Your market</span><br><span class="legend-desc">Every dream client worth winning</span></span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-num">02</span>
+                <span><span class="legend-name">Reached</span><br><span class="legend-desc">Warm guest invites and smart outreach</span></span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-num">03</span>
+                <span><span class="legend-name">In conversation</span><br><span class="legend-desc">Real talks, never cold pitches</span></span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-num">04</span>
+                <span><span class="legend-name">Booked calls</span><br><span class="legend-desc">Qualified and ready to buy</span></span>
+              </li>
+              <li class="legend-item">
+                <span class="legend-num">05</span>
+                <span><span class="legend-name">Clients</span><br><span class="legend-desc">The ones who say yes</span></span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ TRUST BAR ============================ -->
+    <section class="trustbar" aria-label="Clients">
+      <div class="wrap">
+        <p class="kicker">Trusted by teams at</p>
+        <div class="logo-wall">
+          <span class="logo">
+            <svg class="chip" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#1E3AFF"/>
+              <text x="16" y="22.5" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="16" letter-spacing="-0.6" fill="#fff">p</text>
+            </svg>
+            <span class="lw">Plai</span>
+          </span>
+
+          <span class="logo">
+            <svg class="chip" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#16C098"/>
+              <path d="M10.5 21.5L21 11M13.5 11H21v7.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="lw">AutoLeap</span>
+          </span>
+
+          <span class="logo">
+            <svg class="chip" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#101012"/>
+              <path d="M9 23L16 9l7 14" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="lw">Apex Brands</span>
+          </span>
+
+          <span class="logo">
+            <svg class="chip" viewBox="0 0 32 32" aria-hidden="true">
+              <path d="M5 4h22a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H12.5L6.5 26l1.6-5H5a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3z" fill="#FFC400"/>
+              <text x="16" y="16.5" text-anchor="middle" font-family="Hanken Grotesk, sans-serif" font-weight="800" font-size="9.5" letter-spacing="-0.2" fill="#0A0A0A">GHA</text>
+            </svg>
+            <span class="lw">GHA Marketing</span>
+          </span>
+
+          <span class="logo">
+            <svg class="chip" viewBox="0 0 32 32" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#1A56DB"/>
+              <path d="M10 22h11a4 4 0 0 0 .3-8 5.6 5.6 0 0 0-10.6-1.3A4.1 4.1 0 0 0 10 22z" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="lw">Cloud Primero</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROBLEM ============================ -->
+    <section class="problem" aria-labelledby="prob-h">
+      <div class="wrap problem-grid">
+        <div class="reveal">
+          <span class="eyebrow">The problem</span>
+          <h2 class="h2" id="prob-h" style="margin-top:16px">Getting clients should not feel this random</h2>
+          <p class="problem-lead"><strong>You are good at what you do. So why does new business still feel like guesswork?</strong></p>
+          <p class="problem-lead">For most founders, it comes down to a few things:</p>
+        </div>
+
+        <div class="problem-list reveal d1">
+          <div class="problem-item">
+            <span class="num">01</span>
+            <p>Your pipeline runs on referrals. When they slow down, so does your income.</p>
+          </div>
+          <div class="problem-item">
+            <span class="num">02</span>
+            <p>You are the only one who can really sell. So selling competes with delivery, and delivery always wins.</p>
+          </div>
+          <div class="problem-item">
+            <span class="num">03</span>
+            <p>Cold outreach felt spammy and got ignored, so you stopped.</p>
+          </div>
+          <div class="problem-item">
+            <span class="num">04</span>
+            <p>You know you should be building your name online, but you never have the time.</p>
+          </div>
+          <p class="problem-close">This is not a skill problem. It is a system problem. <span class="accent">That is the part we fix.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ HOW / ENGINES ============================ -->
+    <section class="engines" id="how" aria-labelledby="how-h">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">How it works</span>
+          <h2 class="h2" id="how-h">How Northcast brings you clients</h2>
+          <p class="engines-intro">The best clients ignore cold pitches, so we do not send them. Northcast finds the people most likely to buy, reaches them in a way that makes them want to talk, and turns those conversations into pipeline. Under the hood runs a full GTM stack, <strong>AI research, Clay enrichment, and live intent signals</strong>, reaching each buyer with a message built just for them. We do this through up to three engines, and most founders start with the first two.</p>
+        </div>
+
+        <div class="engine-cards">
+          <article class="engine-card reveal">
+            <span class="engine-num">01</span>
+            <div class="engine-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z"/>
+                <path d="M6 11a6 6 0 0 0 12 0M12 17v4M8 21h8"/>
+              </svg>
+            </div>
+            <span class="engine-tag">Warm pipeline</span>
+            <h3 class="h3">The Guest Engine</h3>
+            <p>Your podcast is the way in. The right people happily say yes to a conversation, and you meet them as a peer, not as someone chasing them. Behind the scenes, AI and live buying signals tell us exactly who to invite and when, so every guest is a real opportunity.</p>
+          </article>
+
+          <article class="engine-card reveal d1">
+            <span class="engine-num">02</span>
+            <div class="engine-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 5h18v14H3z"/>
+                <path d="m3 6 9 7 9-7"/>
+                <path d="M16 13h5M16 16h3" opacity="0.5"/>
+              </svg>
+            </div>
+            <span class="engine-tag">Cold pipeline</span>
+            <h3 class="h3">The Outbound Engine</h3>
+            <p>At the same time, we run signal-based outreach by email and LinkedIn. We enrich each account with Clay, score it by fit and intent, and trigger messages off real signals. You reach the right person at the right moment, through warmed inboxes that protect your domain.</p>
+          </article>
+
+          <article class="engine-card addon reveal d2">
+            <span class="engine-num">03</span>
+            <div class="engine-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3v3M12 18v3M5 12H2M22 12h-3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M18.4 5.6l-2.1 2.1M7.7 16.3l-2.1 2.1"/>
+                <circle cx="12" cy="12" r="3.4"/>
+              </svg>
+            </div>
+            <span class="engine-tag">Add on when you are ready</span>
+            <h3 class="h3">The Authority Engine</h3>
+            <p>When you are ready, we turn your podcast, ideas, and conversations into content that builds your name online. We repurpose what you already say into posts that compound over time, so clients arrive already knowing who you are. This is how you stop chasing for good.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PERSONAL AT SCALE (band) ============================ -->
+    <section class="band" aria-labelledby="band-h">
+      <div class="wrap band-grid">
+        <div class="reveal">
+          <span class="eyebrow">The difference</span>
+          <h2 class="h2" id="band-h" style="margin-top:16px">Personal at scale. <span class="accent">Never generic.</span></h2>
+        </div>
+        <div class="reveal d1">
+          <p>Most outreach is lazy. People point AI at a giant list, blast everyone the same message, then wonder why it gets ignored. We do the opposite. We use the same stack to understand each buyer and talk to them like a real person. <strong>Personal is what gets replies, and personal is what we engineer.</strong></p>
+          <div class="contrast">
+            <div class="contrast-card bad">
+              <div class="lab">The lazy way</div>
+              <p>Point AI at a giant list. Blast everyone the same message. Wonder why it gets ignored.</p>
+            </div>
+            <div class="contrast-card good">
+              <div class="lab">The Northcast way</div>
+              <p>Research, signals, and relevance for each buyer. Same stack, used to sound like a real person.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ TIMELINE ============================ -->
+    <section class="after" aria-labelledby="after-h">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">The first 90 days</span>
+          <h2 class="h2" id="after-h">What happens after you say yes</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-track">
+            <div class="step reveal">
+              <div class="node" aria-hidden="true"></div>
+              <div class="step-body">
+                <div class="when">Weeks 1 to 2</div>
+                <h3 class="h3">We set it up</h3>
+                <p>We learn your offer, build your ideal customer profile, name your dream accounts, set up your infrastructure, and write your messages. Ready by the end of week two.</p>
+              </div>
+            </div>
+            <div class="step reveal d1">
+              <div class="node" aria-hidden="true"></div>
+              <div class="step-body">
+                <div class="when">Weeks 3 to 4</div>
+                <h3 class="h3">We go live</h3>
+                <p>The first guest invites and signal-based sequences go out, and results start showing up in a simple shared dashboard.</p>
+              </div>
+            </div>
+            <div class="step reveal d2">
+              <div class="node" aria-hidden="true"></div>
+              <div class="step-body">
+                <div class="when">Month 2</div>
+                <h3 class="h3">We grow what works</h3>
+                <p>With real reply and meeting data, we double down on the segments and messages that land, and turn warm replies into booked calls.</p>
+              </div>
+            </div>
+            <div class="step reveal d3">
+              <div class="node" aria-hidden="true"></div>
+              <div class="step-body">
+                <div class="when">Month 3</div>
+                <h3 class="h3">We make it a machine</h3>
+                <p>It now runs like a system, not a one-off push, with clean reporting and a clear plan for the next quarter.</p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-cta reveal">
+            <a class="btn btn-primary btn-lg" href="#book">Book a call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ WHY ============================ -->
+    <section class="why" aria-labelledby="why-h">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="eyebrow">Why Northcast</span>
+          <h2 class="h2" id="why-h">Why founders choose Northcast</h2>
+        </div>
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2a4 4 0 0 0-4 4v1a4 4 0 0 0 0 8v1a4 4 0 0 0 8 0v-1a4 4 0 0 0 0-8V6a4 4 0 0 0-4-4Z"/>
+                <path d="M12 8v8M9 11h6" opacity="0.5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="h3">Smart tools, human touch</h3>
+              <p>We use AI, Clay, and intent signals to find your best-fit buyers and spot who is ready to talk, then write messages that sound human, not robotic.</p>
+            </div>
+          </article>
+          <article class="why-card reveal d1">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="h3">Signal-based, not spray and pray</h3>
+              <p>We reach people based on real buying signals and fit, so every message is relevant and well timed, and nothing ever goes out as a generic blast.</p>
+            </div>
+          </article>
+          <article class="why-card reveal d1">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6 9 17l-5-5"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="h3">Done for you</h3>
+              <p>You focus on winning and serving clients. We run the whole GTM engine and the full tech stack quietly in the background, start to finish.</p>
+            </div>
+          </article>
+          <article class="why-card reveal d2">
+            <div class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/>
+                <path d="M7 14l3-4 3 3 4-6"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="h3">You see everything</h3>
+              <p>One simple dashboard shows who we reached, who replied, your deliverability health, and exactly what is driving your pipeline.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ RESULTS ============================ -->
+    <section class="results" id="results" aria-labelledby="res-h">
+      <div class="wrap">
+        <div class="results-card reveal">
+          <span class="glow" aria-hidden="true"></span>
+          <div>
+            <span class="eyebrow">Real results</span>
+            <h2 class="h2" id="res-h">Pipeline you can point to</h2>
+            <p class="lede">GHA Marketing needed more pipeline, for themselves and their clients. Using the same signal-based outreach and guest booking we build for every founder, we generated $24K in new revenue and booked 20+ qualified guests across 11 of their clients, in two months.</p>
+            <div class="results-logo">GHA Marketing</div>
+          </div>
+          <div class="stats">
+            <div class="stat">
+              <div class="num">$24K</div>
+              <div class="lab">New revenue generated for GHA</div>
+            </div>
+            <div class="stat">
+              <div class="num">20+</div>
+              <div class="lab">Qualified guests booked across 11 clients, in 2 months</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ FAQ ============================ -->
+    <section class="faq" id="faq" aria-labelledby="faq-h">
+      <div class="wrap faq-wrap">
+        <div class="section-head reveal" style="text-align:center; margin-left:auto; margin-right:auto;">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="h2" id="faq-h">Questions you might have</h2>
+        </div>
+
+        <div class="faq-list reveal d1">
+          <div class="faq-item">
+            <h3 style="margin:0">
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
+                Is this just AI spam?
+                <span class="ico" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+              <div class="faq-a-inner">No. We use AI and tools like Clay to research accounts and find your best-fit, highest-intent buyers, but every message is built to feel personal and relevant. The technology makes us faster and sharper. It never makes us generic.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 style="margin:0">
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
+                I do not have a podcast. Is that a problem?
+                <span class="ico" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+              <div class="faq-a-inner">Not at all. We help you set one up, and you do not need an audience for this to work. The value is in the conversations, not the download count.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 style="margin:0">
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
+                Will my emails hurt my main domain?
+                <span class="ico" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+              <div class="faq-a-inner">No. We never send from your main domain. We use separate warmed inboxes and safe sending infrastructure, so your reputation and deliverability stay protected.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 style="margin:0">
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
+                How soon will I see results?
+                <span class="ico" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+              <div class="faq-a-inner">Setup takes about two weeks. Your first conversations usually start in weeks three and four.</div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <h3 style="margin:0">
+              <button class="faq-q" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">
+                Do I have to commit long term?
+                <span class="ico" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+              <div class="faq-a-inner">We ask for the first three months to build the system and see it work. After that, there is no lock-in.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ FINAL CTA ============================ -->
+    <section class="final" id="book" aria-labelledby="final-h">
+      <div class="wrap">
+        <div class="final-card reveal">
+          <svg class="bg-compass" viewBox="0 0 460 460" aria-hidden="true">
+            <circle cx="230" cy="230" r="205" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+            <circle cx="230" cy="230" r="152" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+            <circle cx="230" cy="230" r="100" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+            <circle cx="230" cy="230" r="56" fill="none" stroke="var(--ink)" stroke-width="1.5"/>
+            <path d="M230 150 L242 230 L230 280 L218 230 Z" fill="var(--ink)"/>
+            <path d="M150 230 L230 242 L310 230 L230 218 Z" fill="var(--ink)"/>
+          </svg>
+          <div class="final-inner">
+            <span class="eyebrow">Book a call</span>
+            <h2 class="h2" id="final-h" style="margin-top:16px">Your next clients are one conversation away</h2>
+            <p>Book a free 30-minute call. We will look at your offer, show you what your pipeline could look like, and tell you honestly if we can help. No pressure.</p>
+            <a class="btn btn-primary btn-lg" href="https://cal.com/northcast/intro" target="_blank" rel="noopener">Book my call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="brand-block">
+          <a class="brand" href="#top" aria-label="Northcast home">
+            <svg class="mark" viewBox="0 0 64 64" aria-hidden="true">
+              <circle cx="32" cy="32" r="22" fill="none" stroke="var(--steel)" stroke-width="2"/>
+              <path d="M32 9 L37.5 32 L32 39 L26.5 32 Z" fill="var(--accent)"/>
+              <path d="M55 32 L32 37.5 L25 32 L32 26.5 Z" fill="var(--ink)" opacity="0.9"/>
+              <circle cx="32" cy="32" r="3.4" fill="var(--bg)"/>
+              <circle cx="32" cy="32" r="1.5" fill="var(--accent)"/>
+            </svg>
+            <span class="word">Northcast</span>
+          </a>
+          <p class="footer-positioning">A modern GTM engine for founders. We bring the right clients to you, so you can focus on the work you do best.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#how">How it works</a>
+          <a href="#results">Results</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Get in touch</h4>
+          <a href="#book">Book a call</a>
+          <a href="mailto:hello@northcast.io">hello@northcast.io</a>
+          <a href="https://www.linkedin.com/company/northcast" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Northcast.</p>
+        <p class="mono">Personal at scale. Never generic.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
