@@ -479,7 +479,6 @@ section { padding-block: var(--section-y); }
   align-items: start;
 }
 .problem-lead { font-size: 1.06rem; color: var(--slate); margin-top: 22px; }
-.problem-lead strong { color: var(--ink); font-weight: 600; }
 .problem-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
 .problem-item {
   padding: 26px 26px 26px 0;
@@ -514,7 +513,6 @@ section { padding-block: var(--section-y); }
    ENGINES
    ============================================================ */
 .engines-intro { font-size: 1.08rem; color: var(--slate); max-width: 880px; line-height: 1.62; }
-.engines-intro strong { color: var(--ink); font-weight: 600; }
 .engine-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -590,7 +588,6 @@ section { padding-block: var(--section-y); }
 .band h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); }
 .band h2 .accent { color: var(--accent-d); }
 .band p { font-size: 1.1rem; line-height: 1.6; color: var(--ink); }
-.band p strong { font-weight: 700; }
 .contrast {
   display: grid;
   grid-template-columns: 1fr 1fr;
