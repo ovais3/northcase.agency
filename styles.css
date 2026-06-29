@@ -753,6 +753,30 @@ section { padding-block: var(--section-y); }
   opacity: 0.4;
   z-index: 0;
 }
+/* live spark that travels the 90-day journey */
+.tl-spark {
+  position: absolute;
+  top: 13px; left: 0;
+  z-index: 2;
+  width: 11px; height: 11px;
+  border-radius: 50%;
+  background: var(--accent);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 5px var(--accent-soft), 0 0 14px 2px rgba(232, 93, 4, 0.55);
+  animation: tlTravelH 6.5s ease-in-out infinite;
+}
+@keyframes tlTravelH {
+  0% { left: 0%; opacity: 0; }
+  8% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+@keyframes tlTravelV {
+  0% { top: 0%; opacity: 0; }
+  8% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { top: 100%; opacity: 0; }
+}
 .step { position: relative; z-index: 1; }
 .step .node {
   width: 28px; height: 28px;
@@ -1058,6 +1082,7 @@ section { padding-block: var(--section-y); }
     width: 2px; height: auto;
     background: linear-gradient(180deg, var(--steel), var(--accent-mid), var(--accent));
   }
+  .tl-spark { top: 0; left: 13px; animation-name: tlTravelV; }
   .step { display: grid; grid-template-columns: 28px 1fr; gap: 20px; padding-bottom: 32px; }
   .step .node { margin-bottom: 0; }
   .step .step-body { padding-top: 1px; }
@@ -1155,4 +1180,5 @@ section { padding-block: var(--section-y); }
   .cf-pulse { animation: none !important; opacity: 0.4 !important; }
   .cf-travelers { display: none; }
   .ef-spark { display: none; }
+  .tl-spark { display: none; }
 }
